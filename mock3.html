@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table,
+        th,
+        th,
+        tr {
+            border: 1px solid grey;
+        }
+        
+        tr,
+        th {
+            padding: 1px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <h2 style="text-align: center; margin: auto;">Madding</h2>
+        <pd>Username:<input type="text" name="username" id="inputUser" /></pd>
+        <br>
+        <br>
+        <pd>Password:<input type="password" name="password" id="inputPass" /></pd>
+        <br>
+        <input type="button" value="Login" onclick="showTodo()">
+
+        <table style="text-align: center;margin:auto;">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Kegiatan</th>
+                    <th>Hari</th>
+                    <th>Poster</th>
+                    <th colspan="2">Action</th>
+                </tr>
+
+                <tr>
+                    <tbody id="render"></tbody>
+                    <th></th>
+                    <th><input type="text" id="inputTask"></th>
+                    <th><select name="hari" id="inputHari"></select></th>
+                    <th><input name="url" id="inputUrl"></th>
+                    <th><input type="button" value="Add Todo" onclick="addTodo()"> </th>
+                </tr>
+            </thead>
+        </table>
+        <br>
+        <h3 style="text-align: center; margin: auto;">Admin</h3>
+        <input type="button" value="Logout" onclick="closedTodo()">
+    </form>
+
+    <script src="./code3.js"></script>
+</body>
+
+</html>
